@@ -36,7 +36,9 @@ html(lang='en')
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.text-uppercase.ms-auto.py-4.py-lg-0
                         li.nav-item
-                            a.nav-link(href='#nosotros') Nosotros 
+                            a.nav-link(href='#nosotros') Nosotros
+                        li.nav-item
+                            a.nav-link(href='#congresos') Congresos 
                         li.nav-item
                             a.nav-link(href='#portfolio') Servicios 
                         li.nav-item
@@ -52,7 +54,35 @@ html(lang='en')
                 .masthead-heading.text-uppercase Science Tech & Humanities A.C.
                 a.btn.btn-primary.btn-xl.text-uppercase(href='#contact') Asóciate aquí
 
-        // Services
+        // Congresos
+        section#congresos.page-section.bg-light
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Congresos
+                    h3.section-subheading.text-muted Congresos que organiza STH.
+                .row
+                    .col-lg-6.col-sm-6.mb-4
+                        // Congreso de educación
+                        .portfolio-item
+                            a.portfolio-link(data-bs-toggle='modal', href='#cieModal')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                img.img-fluid(src='https://tecnosoluciones.com/wp-content/uploads/2018/11/Educacion-virtual.jpg', alt='...')
+                            .portfolio-caption
+                                .portfolio-caption-heading Congreso Internacional de Educación
+                                .portfolio-caption-subheading.text-muted Marzo 2024
+                    .col-lg-6.col-sm-6.mb-4
+                        // Congreso de ing física
+                        .portfolio-item
+                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal2')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                img.img-fluid(src='https://micarrerauniversitaria.com/wp-content/uploads/2018/01/ingenieria-fisica-02.jpg', alt='...')
+                            .portfolio-caption
+                                .portfolio-caption-heading Congreso Internacional de Ingeniería Física
+                                .portfolio-caption-subheading.text-muted Julio 2024
+            
+        // Nosotros
         section#nosotros.page-section
             .container
                 .text-center
@@ -62,166 +92,166 @@ html(lang='en')
                     .col-md-4
                         span.fa-stack.fa-4x
                             i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-microchip.fa-stack-1x.fa-inverse
-                        h4.my-3 E-Commerce
+                            i.fas.fa-users.fa-stack-1x.fa-inverse
+                        h4.my-3 Congresos
                         p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                            | Organizamos congresos nacionales e internacionales para compartir los resultados de las nuevas investigaciones.
                     .col-md-4
                         span.fa-stack.fa-4x
                             i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-laptop.fa-stack-1x.fa-inverse
-                        h4.my-3 Responsive Design
+                            i.fas.fa-rocket.fa-stack-1x.fa-inverse
+                        h4.my-3 Cursos y asesorías
                         p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                            | Ofrecemos curso de actualización y regularización Académica.
                     .col-md-4
                         span.fa-stack.fa-4x
                             i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-lock.fa-stack-1x.fa-inverse
-                        h4.my-3 Web Security
+                            i.fas.fa-balance-scale.fa-stack-1x.fa-inverse
+                        h4.my-3 Ciencia, cultura y Artes
                         p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                            | Promovemos la divulgación de las artes y las ciencias.
 
-        // Portfolio Grid
-        section#portfolio.page-section.bg-light
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase Servicios
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-                .row
-                    .col-lg-4.col-sm-6.mb-4
-                        // Portfolio item 1
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal1')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/1.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Threads
-                                .portfolio-caption-subheading.text-muted Illustration
-                    .col-lg-4.col-sm-6.mb-4
-                        // Portfolio item 2
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal2')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/2.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Explore
-                                .portfolio-caption-subheading.text-muted Graphic Design
-                    .col-lg-4.col-sm-6.mb-4
-                        // Portfolio item 3
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal3')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/3.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Finish
-                                .portfolio-caption-subheading.text-muted Identity
-                    .col-lg-4.col-sm-6.mb-4.mb-lg-0
-                        // Portfolio item 4
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal4')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/4.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Lines
-                                .portfolio-caption-subheading.text-muted Branding
-                    .col-lg-4.col-sm-6.mb-4.mb-sm-0
-                        // Portfolio item 5
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal5')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/5.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Southwest
-                                .portfolio-caption-subheading.text-muted Website Design
-                    .col-lg-4.col-sm-6
-                        // Portfolio item 6
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal6')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/6.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Window
-                                .portfolio-caption-subheading.text-muted Photography
+        // Servicios
+        //- section#portfolio.page-section.bg-light
+        //-     .container
+        //-         .text-center
+        //-             h2.section-heading.text-uppercase Servicios
+        //-             h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+        //-         .row
+        //-             .col-lg-4.col-sm-6.mb-4
+        //-                 // Portfolio item 1
+        //-                 .portfolio-item
+        //-                     a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal1')
+        //-                         .portfolio-hover
+        //-                             .portfolio-hover-content
+        //-                                 i.fas.fa-plus.fa-3x
+        //-                         img.img-fluid(src='assets/img/portfolio/1.jpg', alt='...')
+        //-                     .portfolio-caption
+        //-                         .portfolio-caption-heading Threads
+        //-                         .portfolio-caption-subheading.text-muted Illustration
+        //-             .col-lg-4.col-sm-6.mb-4
+        //-                 // Portfolio item 2
+        //-                 .portfolio-item
+        //-                     a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal2')
+        //-                         .portfolio-hover
+        //-                             .portfolio-hover-content
+        //-                                 i.fas.fa-plus.fa-3x
+        //-                         img.img-fluid(src='assets/img/portfolio/2.jpg', alt='...')
+        //-                     .portfolio-caption
+        //-                         .portfolio-caption-heading Explore
+        //-                         .portfolio-caption-subheading.text-muted Graphic Design
+        //-             .col-lg-4.col-sm-6.mb-4
+        //-                 // Portfolio item 3
+        //-                 .portfolio-item
+        //-                     a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal3')
+        //-                         .portfolio-hover
+        //-                             .portfolio-hover-content
+        //-                                 i.fas.fa-plus.fa-3x
+        //-                         img.img-fluid(src='assets/img/portfolio/3.jpg', alt='...')
+        //-                     .portfolio-caption
+        //-                         .portfolio-caption-heading Finish
+        //-                         .portfolio-caption-subheading.text-muted Identity
+        //-             .col-lg-4.col-sm-6.mb-4.mb-lg-0
+        //-                 // Portfolio item 4
+        //-                 .portfolio-item
+        //-                     a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal4')
+        //-                         .portfolio-hover
+        //-                             .portfolio-hover-content
+        //-                                 i.fas.fa-plus.fa-3x
+        //-                         img.img-fluid(src='assets/img/portfolio/4.jpg', alt='...')
+        //-                     .portfolio-caption
+        //-                         .portfolio-caption-heading Lines
+        //-                         .portfolio-caption-subheading.text-muted Branding
+        //-             .col-lg-4.col-sm-6.mb-4.mb-sm-0
+        //-                 // Portfolio item 5
+        //-                 .portfolio-item
+        //-                     a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal5')
+        //-                         .portfolio-hover
+        //-                             .portfolio-hover-content
+        //-                                 i.fas.fa-plus.fa-3x
+        //-                         img.img-fluid(src='assets/img/portfolio/5.jpg', alt='...')
+        //-                     .portfolio-caption
+        //-                         .portfolio-caption-heading Southwest
+        //-                         .portfolio-caption-subheading.text-muted Website Design
+        //-             .col-lg-4.col-sm-6
+        //-                 // Portfolio item 6
+        //-                 .portfolio-item
+        //-                     a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal6')
+        //-                         .portfolio-hover
+        //-                             .portfolio-hover-content
+        //-                                 i.fas.fa-plus.fa-3x
+        //-                         img.img-fluid(src='assets/img/portfolio/6.jpg', alt='...')
+        //-                     .portfolio-caption
+        //-                         .portfolio-caption-heading Window
+        //-                         .portfolio-caption-subheading.text-muted Photography
 
         // About
-        section#proyectos.page-section
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase Proyectos
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-                ul.timeline
-                    li
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/1.jpg', alt='...')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 2009-2011
-                                h4.subheading Our Humble Beginnings
-                            .timeline-body
-                                p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                    li.timeline-inverted
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/2.jpg', alt='...')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 March 2011
-                                h4.subheading An Agency is Born
-                            .timeline-body
-                                p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                    li
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/3.jpg', alt='...')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 December 2015
-                                h4.subheading Transition to Full Service
-                            .timeline-body
-                                p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                    li.timeline-inverted
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/4.jpg', alt='...')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 July 2020
-                                h4.subheading Phase Two Expansion
-                            .timeline-body
-                                p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                    li.timeline-inverted
-                        .timeline-image
-                            h4
-                                | Be Part
-                                br
-                                | Of Our
-                                br
-                                | Story!
+        //- section#proyectos.page-section
+        //-     .container
+        //-         .text-center
+        //-             h2.section-heading.text-uppercase Proyectos
+        //-             h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+        //-         ul.timeline
+        //-             li
+        //-                 .timeline-image
+        //-                     img.rounded-circle.img-fluid(src='assets/img/about/1.jpg', alt='...')
+        //-                 .timeline-panel
+        //-                     .timeline-heading
+        //-                         h4 2009-2011
+        //-                         h4.subheading Our Humble Beginnings
+        //-                     .timeline-body
+        //-                         p.text-muted
+        //-                             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+        //-             li.timeline-inverted
+        //-                 .timeline-image
+        //-                     img.rounded-circle.img-fluid(src='assets/img/about/2.jpg', alt='...')
+        //-                 .timeline-panel
+        //-                     .timeline-heading
+        //-                         h4 March 2011
+        //-                         h4.subheading An Agency is Born
+        //-                     .timeline-body
+        //-                         p.text-muted
+        //-                             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+        //-             li
+        //-                 .timeline-image
+        //-                     img.rounded-circle.img-fluid(src='assets/img/about/3.jpg', alt='...')
+        //-                 .timeline-panel
+        //-                     .timeline-heading
+        //-                         h4 December 2015
+        //-                         h4.subheading Transition to Full Service
+        //-                     .timeline-body
+        //-                         p.text-muted
+        //-                             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+        //-             li.timeline-inverted
+        //-                 .timeline-image
+        //-                     img.rounded-circle.img-fluid(src='assets/img/about/4.jpg', alt='...')
+        //-                 .timeline-panel
+        //-                     .timeline-heading
+        //-                         h4 July 2020
+        //-                         h4.subheading Phase Two Expansion
+        //-                     .timeline-body
+        //-                         p.text-muted
+        //-                             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+        //-             li.timeline-inverted
+        //-                 .timeline-image
+        //-                     h4
+        //-                         | Be Part
+        //-                         br
+        //-                         | Of Our
+        //-                         br
+        //-                         | Story!
 
         // Team
         section#directivos.page-section.bg-light
             .container
                 .text-center
                     h2.section-heading.text-uppercase Directivos
-                    h3.section-subheading.text-muted Conoce a los directivos de la asociación.
+                    h3.section-subheading.text-muted Conoce a los miembros de la mesa directiva
                 .row
                     .col-lg-3
                         .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/1.jpg', alt='...')
-                            h4 Jaime Granados
+                            //- img.mx-auto.rounded-circle(src='assets/img/team/1.jpg', alt='...')
+                            h4 Jaime Granados Samaniego
                             p.text-muted Presidente
                             a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Parveen Anand Twitter Profile')
                                 i.fab.fa-twitter
@@ -231,9 +261,9 @@ html(lang='en')
                                 i.fab.fa-linkedin-in
                     .col-lg-3
                         .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/1.jpg', alt='...')
-                            h4 Jaime Granados
-                            p.text-muted Vice presidente
+                            //- img.mx-auto.rounded-circle(src='assets/img/team/1.jpg', alt='...')
+                            h4 Jaime Granados Rodríguez
+                            p.text-muted Vicepresidente
                             a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Diana Petersen Twitter Profile')
                                 i.fab.fa-twitter
                             a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Diana Petersen Facebook Profile')
@@ -242,8 +272,8 @@ html(lang='en')
                                 i.fab.fa-linkedin-in
                     .col-lg-3
                         .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/3.jpg', alt='...')
-                            h4 Fernando Tavera
+                            //- img.mx-auto.rounded-circle(src='assets/img/team/3.jpg', alt='...')
+                            h4 Fernando Tavera Romero
                             p.text-muted Secretario
                             a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Larry Parker Twitter Profile')
                                 i.fab.fa-twitter
@@ -253,8 +283,8 @@ html(lang='en')
                                 i.fab.fa-linkedin-in
                     .col-lg-3
                         .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/2.jpg', alt='...')
-                            h4 Karla Granados
+                            //- img.mx-auto.rounded-circle(src='assets/img/team/2.jpg', alt='...')
+                            h4 Karla Granados Rodríguez
                             p.text-muted Tesorera
                             a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Parveen Anand Twitter Profile')
                                 i.fab.fa-twitter
@@ -265,24 +295,24 @@ html(lang='en')
                 .row
                     .col-lg-8.mx-auto.text-center
                         p.large.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
+                            | La mesa directiva tiene vigencia hasta el 31 de diciembre del 2025
 
         // Clients
-        div.py-5
-            .container
-                .row.align-items-center
-                    .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/microsoft.svg', alt='...', aria-label='Microsoft Logo')
-                    .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/google.svg', alt='...', aria-label='Google Logo')
-                    .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/facebook.svg', alt='...', aria-label='Facebook Logo')
-                    .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/ibm.svg', alt='...', aria-label='IBM Logo')
+        //- div.py-5
+        //-     .container
+        //-         .row.align-items-center
+        //-             .col-md-3.col-sm-6.my-3
+        //-                 a(href='#!')
+        //-                     img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/microsoft.svg', alt='...', aria-label='Microsoft Logo')
+        //-             .col-md-3.col-sm-6.my-3
+        //-                 a(href='#!')
+        //-                     img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/google.svg', alt='...', aria-label='Google Logo')
+        //-             .col-md-3.col-sm-6.my-3
+        //-                 a(href='#!')
+        //-                     img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/facebook.svg', alt='...', aria-label='Facebook Logo')
+        //-             .col-md-3.col-sm-6.my-3
+        //-                 a(href='#!')
+        //-                     img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/ibm.svg', alt='...', aria-label='IBM Logo')
 
         // Contact
         section#contact.page-section
@@ -369,7 +399,7 @@ html(lang='en')
             .container
                 .row.align-items-center
                     .col-lg-4.text-lg-start
-                        | Copyright &copy; Science Tech & Humanities 2023
+                        | Copyright &copy; Science Tech & Humanities 2024
                     .col-lg-4.my-3.my-lg-0
                         a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Twitter')
                             i.fab.fa-twitter
@@ -382,6 +412,7 @@ html(lang='en')
                         a.link-dark.text-decoration-none(href='#!') Terms of Use
 
         // Portfolio Modals
+        include includes/cie-modal
         include includes/portfolio-modal-1
         include includes/portfolio-modal-2
         include includes/portfolio-modal-3
